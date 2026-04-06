@@ -39,3 +39,6 @@ source ~/.aliases
 bindkey '^[[A' history-search-backward
 bindkey '^[[B' history-search-forward
 
+# ---------- ENVIRONMENT VARIABLES -------
+export EDITOR="nvim"
+export PATH="$HOME/.local/bin:$PATH"
