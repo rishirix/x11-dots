@@ -1,16 +1,14 @@
-xrandr --output HDMI-0 --primary --auto --dpi 96 --output DP-4 --auto --dpi 96 --right-of HDMI-0
-sh .fehbg &
-xrdb -merge .Xresources
-picom --daemon --config $HOME/.config/picom.conf &
-/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-easyeffects --hide-window --quit --service-mode &
-# nm-applet &
-# blueman-applet &
+eval $(dbus-launch --sh-syntax --exit-with-session --exit-with-x11)
+
+xrdb -merge ~/.Xresources
+
+/usr/libexec/polkit-gnome-authentication-agent-1 &
 xset b off -dpms s off
-udiskie -a -n &
-dunst &
+pipewire &
+easyeffects --hide-window --quit --service-mode &
 dwmblocks &
-clipmenud &
-flameshot &
-battery.sh &
+nitrogen --restore &
+picom &
+dunst &
+
 exec dwm

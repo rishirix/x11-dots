@@ -1,12 +1,11 @@
 # ~/.zshrc
-
 # ---------- BASIC SETTINGS ----------
 autoload -U compinit promptinit
 compinit
 promptinit
 
 # Prompt
-PROMPT='%F{blue}%~ %F{red}> '
+#PROMPT='%F{blue}%~ %F{red}> '
 
 # ---------- HISTORY ----------
 HISTFILE=~/.zsh_history
@@ -39,6 +38,10 @@ source ~/.aliases
 bindkey '^[[A' history-search-backward
 bindkey '^[[B' history-search-forward
 
-# ---------- ENVIRONMENT VARIABLES -------
-export EDITOR="nvim"
-export PATH="$HOME/.local/bin:$PATH"
+# ---------- ENVIRONMENT VARIABLES ---------
+
+export ZSH="$HOME/.oh-my-zsh"
+ZSH_THEME="robbyrussell"
+plugins=(git)
+
+source $ZSH/oh-my-zsh.sh
