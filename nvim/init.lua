@@ -1,9 +1,16 @@
 vim.cmd.set(
 	'number',
 	'relativenumber',
-	'termguicolors'
+	'termguicolors',
+	'clipboard+=unnamedplus',
+	'noshowmode'
 )
 vim.g.mapleader = " "
+vim.g.airline_theme = 'base16_tomorrow_night'
+vim.g.airline_left_sep = ''
+vim.g.airline_left_alt_sep = ''
+vim.g.airline_right_sep = ''
+vim.g.airline_right_alt_sep = ''
 
 -- Bootstrap lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -35,7 +42,7 @@ vim.keymap.set('n','<leader>pv', vim.cmd.Ex)
 vim.keymap.set('n','<leader>ff',builtin.find_files,{})
 vim.keymap.set('n','<leader>fg',builtin.live_grep,{})
 vim.keymap.set('n','<C-n>',':Neotree toggle <CR>',{})
-vim.cmd.colorscheme "moonfly"
+vim.cmd.colorscheme "base16-tomorrow-night"
 
 vim.api.nvim_create_autocmd('FileType', {
   pattern = { '<filetype>' },
