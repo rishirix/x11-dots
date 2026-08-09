@@ -1,0 +1,30 @@
+# Alacritty color scheme
+# Derived from palette: 17BEBB, 2E282A, CD5334, EDB88B, FAD8D6
+
+[colors.primary]
+background = '#2e282a'
+foreground = '#f5e4e1'
+
+[colors.cursor]
+text = '#2e282a'
+cursor = '#fad8d6'
+
+[colors.normal]
+black   = '#3a3335'
+red     = '#cd5334'
+green   = '#7fb069'
+yellow  = '#edb88b'
+blue    = '#3b6e8c'
+magenta = '#b5657a'
+cyan    = '#17bebb'
+white   = '#d9c7c4'
+
+[colors.bright]
+black   = '#5c5457'
+red     = '#e2724f'
+green   = '#9ecb85'
+yellow  = '#f5cba1'
+blue    = '#5a8fb0'
+magenta = '#d98a99'
+cyan    = '#4fd4d1'
+white   = '#fff1ef'
