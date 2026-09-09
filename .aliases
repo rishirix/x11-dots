@@ -10,5 +10,4 @@ alias c='clear'
 alias q='exit'
 
 #-------- Work related alias ---------#
-alias nc='nvim $HOME/.config/nvim'
-alias cws='cd $HOME/C_Lang/ && ll'
+alias za='zathura '

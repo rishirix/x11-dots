@@ -1,13 +1,43 @@
 [general]
 live_config_reload = true
-import = [ "~/.config/alacritty/themes/nord.toml" ]
+#import=["~/.config/alacritty/themes/solarized_dark.toml"]
 [window]
-opacity = 0.95
+opacity = 0.85
 padding = { x = 5, y = 5}
 [scrolling]
 history = 10000
 multiplier = 5
 [font]
-size = 10
+size = 13
 [selection]
 save_to_clipboard = true
+
+# BEGIN ACE
+[colors.primary]
+background = "#0E060F"
+foreground = "#eddfed"
+
+[colors.cursor]
+text =       "#0E060F"
+cursor =     "#eddfed"
+
+[colors.normal]
+black =      "#0E060F"
+red =        "#956AA3"
+green =      "#AF7DC1"
+yellow =     "#B191B2"
+blue =       "#C097C0"
+magenta =    "#D6AED8"
+cyan =       "#DCC9D9"
+white =      "#eddfed"
+
+[colors.bright]
+black =      "#a59ca5"
+red =        "#956AA3"
+green =      "#AF7DC1"
+yellow =     "#B191B2"
+blue =       "#C097C0"
+magenta =    "#D6AED8"
+cyan =       "#DCC9D9"
+white =      "#eddfed"
+# END ACE

@@ -10,5 +10,6 @@ dwmblocks &
 nitrogen --restore &
 picom &
 dunst &
+wal -R
 
 exec dwm

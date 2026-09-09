@@ -40,6 +40,8 @@ bindkey '^[[B' history-search-forward
 
 # ---------- ENVIRONMENT VARIABLES ---------
 
+export QT_QPA_PLATFORMTHEME=gtk3
+
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 plugins=(git)

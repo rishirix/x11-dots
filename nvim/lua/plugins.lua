@@ -7,5 +7,5 @@ return {
 	{"windwp/nvim-autopairs",event="InsertEnter",config="true"},
 	{"vim-airline/vim-airline"},
 	{"vim-airline/vim-airline-themes"},
-	{"nordtheme/vim"}
+	{"norcalli/nvim-colorizer.lua"},
 }

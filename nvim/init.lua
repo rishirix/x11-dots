@@ -6,11 +6,11 @@ vim.cmd.set(
 	'noshowmode'
 )
 vim.g.mapleader = " "
-vim.g.airline_theme = 'nord'
-vim.g.airline_left_sep = ''
-vim.g.airline_left_alt_sep = ''
-vim.g.airline_right_sep = ''
-vim.g.airline_right_alt_sep = ''
+vim.g.airline_theme = 'base16'
+vim.g.airline_left_sep = ''
+vim.g.airline_left_alt_sep = ''
+vim.g.airline_right_sep = ''
+vim.g.airline_right_alt_sep = ''
 
 -- Bootstrap lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -37,12 +37,13 @@ require('nvim-treesitter').setup {
 }
 require('nvim-treesitter').install{ "c","cpp","java","javascript","python","lua","rust" }
 local builtin = require("telescope.builtin")
+require("colorizer").setup()
 
 vim.keymap.set('n','<leader>pv', vim.cmd.Ex)
 vim.keymap.set('n','<leader>ff',builtin.find_files,{})
 vim.keymap.set('n','<leader>fg',builtin.live_grep,{})
 vim.keymap.set('n','<C-n>',':Neotree toggle <CR>',{})
-vim.cmd.colorscheme "nord"
+vim.cmd.colorscheme "industry"
 
 vim.api.nvim_create_autocmd('FileType', {
   pattern = { '<filetype>' },
