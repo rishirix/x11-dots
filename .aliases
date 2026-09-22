@@ -8,6 +8,7 @@ alias y='yazi'
 alias rmk='rm config.h && sudo make clean install'
 alias c='clear'
 alias q='exit'
+alias ff='fastfetch --file $HOME/.config/fastfetch/wd2_ascii.txt'
 
 #-------- Work related alias ---------#
 alias za='zathura '

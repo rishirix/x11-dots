@@ -2,7 +2,30 @@
 
 mkdir -p ~/.config/wal/hooks
 
-cp ~/.cache/wal/dwm-colors.h  ~/suckless/dwm/colors.h
-cp ~/.cache/wal/dmenu-colors.h ~/suckless/dmenu/colors.h
+source /home/rix/.cache/wal/colors.sh
 
-notify-send "pywal" "Suckless colors updated — ready to recompile" 2>/dev/null || true
+cat > ~/.cache/wal/dwm.Xresources << EOF
+dwm.background:    $color0
+dwm.foreground:    $color15
+dwm.border:        $color2
+dwm.backgroundSel: $color2
+dwm.foregroundSel: $color0
+dwm.borderSel:     $color1
+EOF
+
+cat > ~/.cache/wal/dmenu.Xresources << EOF
+dmenu.background:    $color0
+dmenu.foreground:    $color15
+dmenu.backgroundSel: $color2
+dmenu.foregroundSel: $color0
+dmenu.backgroundOut: $color1
+dmenu.foregroundOut: $color0
+EOF
+
+cp $HOME/.cache/wal/dunst.conf $HOME/.config/dunst/dunstrc
+pkill dunst && dunst & disown
+
+xrdb -merge /home/rix/.Xresources
+kill -HUP $(pidof dwm)
+
+notify-send "pywal" "Colors updated and DWM restarted" 2>/dev/null || true

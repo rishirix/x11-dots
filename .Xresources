@@ -1,5 +1,13 @@
+#include "/home/rix/.cache/wal/colors.Xresources"
+#include "/home/rix/.cache/wal/dwm.Xresources"
+#include "/home/rix/.cache/wal/dmenu.Xresources"
+
 Xft.antialias: 1
 Xft.hinting: 1
 Xft.hintstyle: hintmedium
 Xft.rgba: rgb
-Xft.dpi: 96
+Xft.dpi: 120
+dwm.topbar: 0
+dwm.borderpx: 0
+dwm.font: monospace:style=Bold:size=8
+dmenu.font: monospace:size=10

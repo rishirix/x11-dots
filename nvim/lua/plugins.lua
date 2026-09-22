@@ -8,4 +8,5 @@ return {
 	{"vim-airline/vim-airline"},
 	{"vim-airline/vim-airline-themes"},
 	{"norcalli/nvim-colorizer.lua"},
+	{"RedsXDD/neopywal.nvim",name="neopywal",lazy=false,priority=1000,opts={}},
 }
